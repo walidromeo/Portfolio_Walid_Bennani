@@ -1,0 +1,327 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing:border-box ;
+}
+/*recom*/
+#recommandations{
+    background: #fff;
+}
+#recommandations .heading h2{
+    color: #d82c2e;
+}
+.fas.fa-chevron-left, .fas.fa-chevron-right{
+    background-image: none;
+    color: #d82c2e;
+}
+.carousel-indicators{
+    bottom: 0px;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 1px solid #d82c2e;
+}
+.carousel-indicators li.active{
+    background-color: #d82c2e;
+}
+#myCarousel .carousel-item{
+    padding: 40px 30px;
+}
+#myCarousel .carousel-item h3{
+    color: #d82c2e;
+    font-style: italic;
+}
+/* nav */ 
+.menu 
+{
+    background-color: #F64040;
+    border-bottom: 2px solid #eee ;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.menu ul
+{
+    margin: 2px auto;
+}
+.navbar-light .navbar-brand 
+{ color: white;
+}
+.nav-item .w
+{
+    color: #eee;
+    text-transform: uppercase;
+    margin: 5px;
+    text-decoration: none;
+}
+.w
+{
+    position: relative;
+}
+.w::after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0px;
+    height: 3px;
+    width: 0;
+    background-color: #eee;
+    transition: ease 1s width;
+}
+.w:hover:after
+{
+    width: 100%;
+}
+/* home section */ 
+#home
+{
+    background-color: #F64040;
+}
+#home .row 
+{
+    justify-content: center;
+}
+.card
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 146px;
+    border: transparent;
+    background-color: #F64040;
+    text-transform: uppercase;
+}
+.card img 
+{
+    border-radius: 100%;
+    filter: grayscale(100%);
+}
+.card-title
+{
+    color: white;
+    font-size: 32px;
+}
+.card-text 
+{
+    font-weight: bold;
+}
+.btn-danger
+ {
+     border: 1px #eee solid;
+ }
+.btn-danger:hover
+{
+    background-color: aliceblue;
+    color: #F64040;
+}
+/* competances */ 
+#competances
+{
+    width: 100%;
+    overflow: hidden;
+}
+.progress
+{
+   width: 88% ;
+   height: 33px;
+   margin: 20px;
+   font-size: 20px;
+   text-transform: uppercase;
+}
+.h1 
+{
+    text-transform: uppercase;
+    text-align: center;
+    color: #F64040;
+    padding: 20px 0;
+}
+.progress-bar
+{
+    background-color: #F64040;
+}
+.h1::after
+{
+    content: "";
+    display: block;
+    background-color: #F64040;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    width: 5%;
+    height: 3px;
+    margin: 0px auto;
+    transition: width 1s ease;
+}
+
+.h1:hover:after
+{
+    width: 10%;
+}
+
+/* education */ 
+
+#education
+{
+    background-color: #F64040;
+    text-align: center;
+}
+#education .h1 
+{
+    color: #eee;
+}
+#education .h1::after
+{
+    background-color: #eee;
+}
+
+.h2
+{
+    text-transform: uppercase;
+    padding-bottom: 9px;
+    color: #000;
+}
+.educ
+{ 
+ 
+    width: 70%;
+    background-color: #e8e8e8e8;
+    text-align: center;
+    border-radius: 10px;
+    margin: 38px 95px;
+}
+.educ .des
+{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #F64040;
+    border-bottom: 2px solid #000 ;
+    font-size: 17px;
+}
+
+/* portfolio */ 
+#portfolio
+{
+    overflow: hidden;
+}
+.portfolo
+{
+    width: 378px;
+    height: 247px;
+    border: #F64040 5px solid;
+    margin: 20px 94px;
+    border-radius:10px;
+}
+.portfolo img
+{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(13);
+    transition: 1s ease;
+}
+.portfolo:hover img 
+{
+    filter: grayscale(0);
+}
+
+/* footer */ 
+footer{
+    background: #333;
+    padding: 20px 0 40px;
+}
+footer i 
+{
+    color: #F64040;
+}
+footer i:hover
+{
+    opacity: 0.7;
+}
+footer h5{
+    color: #fff;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */ 
+@media screen and (max-width:984px)
+{
+    .card
+    {
+        margin-left: 0px;
+    }
+    .h1::after
+    {
+        width: 20%;
+    }
+    .progress
+    {
+        margin-left: 20px;
+    }
+    .educ
+    {
+        margin: 10px 0px;
+        width: 100%;
+    }
+    .portfolo
+    {
+        margin: 20px 0;
+        width: auto;
+    }
+}
+@media screen and (max-width:572px)
+{
+    .card
+    {
+        margin: 73px auto;
+    }
+    
+}
